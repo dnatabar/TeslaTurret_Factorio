@@ -4,10 +4,15 @@ data:extend(
     type = "beam",
     name = "tesla-lightning",
     flags = {"not-on-map"},
-    width = 0.5,
     damage_interval = 15,
-    light = {intensity = 0.5, size = 20},
-
+    light = {intensity = 0.9, size = 30},
+    working_sound =
+    {
+      {
+        filename = "__base__/sound/fight/electric-beam.ogg",
+        volume = 0.7
+      }
+    },
     action =
     {
       type = "direct",
@@ -18,31 +23,31 @@ data:extend(
         {
           {
             type = "damage",
-            damage = { amount = 45, type = "laser"}
+            damage = { amount = 45, type = "electric"}
           }
         }
       }
     },
     head =
     {
-      filename = "__Tesla_Turret__/graphics/entity/tesla-turret/tesla-lightning-head.png",
-      line_length = 1,
+      filename = "__base__/graphics/entity/beam/beam-head.png",
+      line_length = 16,
       tint = {r=0.0, g=0.98, b=1.0},
-      frame_count = 1,
-      width = 24,
-      height = 30,
+      frame_count = 16,
+      width = 45,
+      height = 39,
       priority = "high",
       animation_speed = 0.1,
       blend_mode = "additive-soft"
     },
     tail =
     {
-      filename = "__Tesla_Turret__/graphics/entity/tesla-turret/tesla-lightning-tail.png",
-      line_length = 1,
+      filename = "__base__/graphics/entity/beam/beam-tail.png",
+      line_length = 16,
       tint = {r=0.0, g=0.98, b=1.0},
-      frame_count = 1,
-      width = 24,
-      height = 30,
+      frame_count = 16,
+      width = 45,
+      height = 39,
       priority = "high",
       animation_speed = 0.1,
       blend_mode = "additive-soft"
@@ -50,17 +55,53 @@ data:extend(
     body =
     {
       {
-        filename = "__Tesla_Turret__/graphics/entity/tesla-turret/tesla-lightning-body.png",
-        line_length = 1,
-        tint = {r=0.0, g=0.98, b=1.0},
-        frame_count = 1,
-        width = 24,
-        height = 30,
-        priority = "high",
-        animation_speed = 0.1,
-        blend_mode = "additive-soft"
+        filename = "__base__/graphics/entity/beam/beam-body-1.png",
+        line_length = 16,
+        width = 45,
+        height = 39,
+        frame_count = 16,
+        blend_mode = beam_blend_mode,
       },
-
+      {
+        filename = "__base__/graphics/entity/beam/beam-body-2.png",
+        line_length = 16,
+        width = 45,
+        height = 39,
+        frame_count = 16,
+        blend_mode = beam_blend_mode,
+      },
+      {
+        filename = "__base__/graphics/entity/beam/beam-body-3.png",
+        line_length = 16,
+        width = 45,
+        height = 39,
+        frame_count = 16,
+        blend_mode = beam_blend_mode,
+      },
+      {
+        filename = "__base__/graphics/entity/beam/beam-body-4.png",
+        line_length = 16,
+        width = 45,
+        height = 39,
+        frame_count = 16,
+        blend_mode = beam_blend_mode,
+      },
+      {
+        filename = "__base__/graphics/entity/beam/beam-body-5.png",
+        line_length = 16,
+        width = 45,
+        height = 39,
+        frame_count = 16,
+        blend_mode = beam_blend_mode,
+      },
+      {
+        filename = "__base__/graphics/entity/beam/beam-body-6.png",
+        line_length = 16,
+        width = 45,
+        height = 39,
+        frame_count = 16,
+        blend_mode = beam_blend_mode,
+      },
     }
   },
   {

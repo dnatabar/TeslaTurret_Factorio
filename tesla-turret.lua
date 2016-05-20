@@ -4,6 +4,7 @@ data:extend(
     type = "beam",
     name = "tesla-lightning",
     flags = {"not-on-map"},
+    width = 0.5,
     damage_interval = 15,
     light = {intensity = 0.9, size = 30},
     working_sound =

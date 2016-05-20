@@ -58,5 +58,8 @@ else
   end
   teslaIngredients["steel-plate"] = teslaIngredients["steel-plate"] + 40
 end
-
-data.raw["recipe"]["tesla-turret"].ingredients = teslaIngredients
+local ing = {}
+for name, c in pairs(teslaIngredients) do
+  table.insert(ing, {name, c})  
+end
+data.raw["recipe"]["tesla-turret"].ingredients = ing

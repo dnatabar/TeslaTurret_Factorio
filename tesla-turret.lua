@@ -5,7 +5,7 @@ data:extend(
     name = "tesla-lightning",
     flags = {"not-on-map"},
     width = 0.5,
-    damage_interval = 18,
+    damage_interval = 15,
     light = {intensity = 0.5, size = 20},
 
     action =
@@ -27,24 +27,24 @@ data:extend(
     {
       filename = "__Tesla_Turret__/graphics/entity/tesla-turret/tesla-lightning-head.png",
       line_length = 1,
-      tint = {r=1.0, g=0.0, b=0.0},
+      tint = {r=0.0, g=0.98, b=1.0},
       frame_count = 1,
       width = 24,
       height = 30,
       priority = "high",
-      animation_speed = 0.5,
+      animation_speed = 0.1,
       blend_mode = "additive-soft"
     },
     tail =
     {
       filename = "__Tesla_Turret__/graphics/entity/tesla-turret/tesla-lightning-tail.png",
       line_length = 1,
-      tint = {r=1.0, g=0.0, b=0.0},
+      tint = {r=0.0, g=0.98, b=1.0},
       frame_count = 1,
       width = 24,
       height = 30,
       priority = "high",
-      animation_speed = 0.5,
+      animation_speed = 0.1,
       blend_mode = "additive-soft"
     },
     body =
@@ -52,12 +52,12 @@ data:extend(
       {
         filename = "__Tesla_Turret__/graphics/entity/tesla-turret/tesla-lightning-body.png",
         line_length = 1,
-        tint = {r=1.0, g=0.0, b=0.0},
+        tint = {r=0.0, g=0.98, b=1.0},
         frame_count = 1,
         width = 24,
         height = 30,
         priority = "high",
-        animation_speed = 0.5,
+        animation_speed = 0.1,
         blend_mode = "additive-soft"
       },
 
@@ -235,7 +235,7 @@ data:extend(
     cooldown = 15,
     --projectile_center = {0, -0.2},
     --projectile_creation_distance = 1.4,
-    range = 28,
+    range = 12,
     sound =
     {
       {

@@ -6,5 +6,5 @@
 	"contact": "dnatabar: ilirith @ IRC, ronin@roninempire.net / dnatabar @ Factorio Forums, Souler: Souler @ IRC",
 	"homepage": "factorio.roninempire.net",
 	"description": "This mod adds a Tesla Turret with custom graphics and animations",
-	"dependencies": ["base >= 0.12.11"]
+	"dependencies": ["base >= 0.12.11", "? bobplates", "?bobelectronics"]
 }

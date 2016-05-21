@@ -349,38 +349,6 @@ data:extend(
 data:extend(
 {
   {
-    type = "technology",
-    name = "laser-turrets",
-    icon = "__base__/graphics/technology/laser-turrets.png",
-    effects =
-    {
-      {
-        type = "unlock-recipe",
-        recipe = "laser-turret"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "tesla-turret"
-      }
-    },
-    prerequisites = {"turrets", "laser", "battery"},
-    unit =
-    {
-      count = 50,
-      ingredients =
-      {
-        {"science-pack-1", 1},
-        {"science-pack-2", 1}
-      },
-      time = 30
-    },
-    order = "a-j-b"
-  }
-})
-
-data:extend(
-{
-  {
     type = "corpse",
     name = "tesla-turret-remnants",
     icon = "__base__/graphics/icons/remnants.png",
@@ -404,5 +372,34 @@ data:extend(
         filename = "__Tesla_Turret__/graphics/entity/tesla-turret/tesla-turret-base.png"
       }
     }
+  }
+})
+
+data:extend(
+{
+  {
+    type = "technology",
+    name = "tesla-turrets",
+    icon = "__base__/graphics/technology/laser-turrets.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "tesla-turret"
+      }
+    },
+    prerequisites = {"turrets", "laser", "battery"},
+    unit =
+    {
+      count = 75,
+      ingredients =
+      {
+        {"science-pack-1", 2},
+        {"science-pack-2", 2},
+        {"science-pack-3", 1}
+      },
+      time = 45
+    },
+    order = "a-j-b"
   }
 })
